@@ -1,0 +1,30 @@
+[
+  {
+    "id": "short-rose",
+    "name": "Shorts Cós Alto - Rose",
+    "price": 129.9,
+    "image": "produto1.webp",
+    "thumb": "produto1b.webp",
+    "sizes": [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG"
+    ],
+    "badge": "novo"
+  },
+  {
+    "id": "short-capuccino",
+    "name": "Shorts Modelador - Capuccino",
+    "price": 139.9,
+    "image": "produto2.webp",
+    "thumb": "produto2b.webp",
+    "sizes": [
+      "P",
+      "M",
+      "G"
+    ],
+    "badge": "best"
+  }
+]

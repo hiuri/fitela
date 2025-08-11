@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FITELA • Fitness Feminino</title>
+    <meta name="description" content="Moda fitness feminina: tops, shorts e conjuntos modeladores. Conforto, performance e design minimalista.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="assets/logo.jpg" alt="FITELA" width="40" height="40" class="rounded-circle object-fit-cover">
+          <span class="fw-bold brand-text">FITELA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            <li class="nav-item ms-lg-3">
+              <button class="btn btn-dark position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer">
+                <span class="me-1">Sacola</span>
+                <span class="badge text-bg-light cart-count rounded-pill">0</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-tight">Performance & estilo para o seu treino</h1>
+            <p class="lead text-secondary mt-3">Peças leves, modeladoras e respiráveis para você se sentir confiante em qualquer movimento.</p>
+            <div class="d-flex gap-2 mt-3">
+              <a class="btn btn-dark btn-lg" href="#produtos">Comprar agora</a>
+              <a class="btn btn-outline-dark btn-lg" href="#sobre">Conheça a FITELA</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card shadow-sm border-0 overflow-hidden hero-card">
+              <img src="assets/produto1.webp" class="w-100" alt="Shorts Rose">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-5 border-top bg-white">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between mb-4">
+          <div>
+            <h2 class="h3 fw-bold mb-1">Destaques</h2>
+            <p class="text-secondary mb-0">Escolhidos para você treinar com conforto.</p>
+          </div>
+          <div class="d-none d-md-flex gap-2">
+            <button class="btn btn-outline-dark btn-sm" data-filter="all">Tudo</button>
+            <button class="btn btn-outline-dark btn-sm" data-filter="shorts">Shorts</button>
+            <button class="btn btn-outline-dark btn-sm" data-filter="conjuntos">Conjuntos</button>
+          </div>
+        </div>
+
+        <div id="product-grid" class="row g-4">
+          <!-- Cards via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <img src="assets/produto2b.webp" class="w-100 rounded-4 shadow-sm" alt="Modelador capuccino">
+          </div>
+          <div class="col-lg-7">
+            <h2 class="h3 fw-bold mb-3">Feito para durar. Pensado para você.</h2>
+            <p class="text-secondary">Trabalhamos com tecidos de toque aveludado, proteção UV e compressão na medida. Cós alto anatômico, modelo sem transparência e costuras reforçadas para treinos de alta intensidade.</p>
+            <ul class="list-unstyled small text-secondary">
+              <li>• Tecidos premium com elastano</li>
+              <li>• Zero transparência</li>
+              <li>• Secagem rápida</li>
+              <li>• Produção nacional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 border-top bg-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="h4 fw-bold">Fale com a gente</h2>
+            <p class="text-secondary">Dúvidas sobre tamanhos, trocas ou atacado? Chame no WhatsApp:</p>
+            <a class="btn btn-success btn-lg" target="_blank" rel="noopener" href="https://wa.me/5527997675796?text=Olá,%20vim%20do%20site%20FITELA%20e%20quero%20ajuda%20com%20uma%20compra.">Atendimento no WhatsApp</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 rounded-4 bg-light-subtle border">
+              <h3 class="h6 fw-bold text-uppercase text-secondary mb-3">Envio para todo o Brasil</h3>
+              <p class="mb-1 small text-secondary">Pagamentos via Pix e Cartão (intermediados por sua plataforma de preferência).</p>
+              <p class="mb-0 small text-secondary">Prazo de postagem: 1–3 dias úteis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+        <span class="small text-secondary">© <span id="year"></span> FITELA. Todos os direitos reservados.</span>
+        <a href="#" class="small link-secondary">Política de trocas</a>
+      </div>
+    </footer>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartDrawerLabel">Sua sacola</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="cartItems" class="mb-3">
+          <p class="text-secondary">Sua sacola está vazia.</p>
+        </div>
+        <div class="mt-auto">
+          <div class="d-flex justify-content-between mb-2">
+            <span class="fw-semibold">Total</span>
+            <span id="cartTotal" class="fw-bold">R$ 0,00</span>
+          </div>
+          <a id="checkoutBtn" class="btn btn-dark w-100" target="_blank">Finalizar pelo WhatsApp</a>
+          <p class="small text-secondary mt-2">Você será direcionado ao WhatsApp com o resumo do pedido.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
